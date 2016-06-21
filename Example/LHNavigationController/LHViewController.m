@@ -7,23 +7,27 @@
 //
 
 #import "LHViewController.h"
+#import "LHNavigationController.h"
 
-@interface LHViewController ()
+@interface LHViewController ()<LHNavigationControllerDelegate>
 
 @end
 
 @implementation LHViewController
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+- (UIViewController *)viewControllerAfterController:(UIViewController *)controller{
+    if (controller == self) {
+        UIViewController * nvc = [[UIViewController alloc] init];
+        nvc.view.backgroundColor = [UIColor greenColor];
+        return nvc;
+    }
+    return nil;
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    LHNavigationController * nav = (LHNavigationController *)self.navigationController;
+    nav.lhDelegate = self;
 }
 
 @end

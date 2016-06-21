@@ -1,0 +1,6 @@
+framework module LHNavigationController {
+  umbrella header "LHNavigationController-umbrella.h"
+
+  export *
+  module * { export * }
+}
