@@ -17,7 +17,7 @@
     return self;
 }
 - (CGFloat)transitionDuration:(id<UIViewControllerContextTransitioning>)transitionContext{
-    return 0.4;
+    return 0.3;
 }
 - (void)animateTransition:(id<UIViewControllerContextTransitioning>)transitionContext{
     //Get views and vcs
@@ -29,20 +29,23 @@
     CGFloat duration = [self transitionDuration:transitionContext];
     
     CGFloat toTransition = CGRectGetWidth(containView.bounds);
-    CGFloat fromTranstion = toTransition * 0.66;
+    CGFloat fromTranstion = toTransition * 0.3;
     //Add subview
+    
     [containView addSubview:toView];
+    
     if (_operation == LHNavAnimatorOperationPush) {
         _nav.view.userInteractionEnabled = NO;
         toView.transform = CGAffineTransformMakeTranslation(toTransition, 0);
         fromView.transform = CGAffineTransformIdentity;
         [containView bringSubviewToFront:toView];
         [UIView animateWithDuration:duration
+                              delay:0.0
+                            options:UIViewAnimationOptionCurveLinear
                          animations:^{
                              toView.transform = CGAffineTransformIdentity;
                              fromView.transform = CGAffineTransformMakeTranslation(-1 * fromTranstion, 0);
-                         }
-                         completion:^(BOOL finished) {
+                         } completion:^(BOOL finished) {
                              _nav.view.userInteractionEnabled = YES;
                              fromView.transform = CGAffineTransformIdentity;
                              toView.transform = CGAffineTransformIdentity;
@@ -55,11 +58,12 @@
         fromView.transform = CGAffineTransformIdentity;
         _nav.view.userInteractionEnabled = NO;
         [UIView animateWithDuration:duration
+                              delay:0.0
+                            options:UIViewAnimationOptionCurveLinear
                          animations:^{
                              toView.transform = CGAffineTransformIdentity;
                              fromView.transform = CGAffineTransformMakeTranslation(toTransition, 0);
-                         }
-                         completion:^(BOOL finished) {
+                         } completion:^(BOOL finished) {
                              _nav.view.userInteractionEnabled = YES;
                              fromView.transform = CGAffineTransformIdentity;
                              toView.transform = CGAffineTransformIdentity;

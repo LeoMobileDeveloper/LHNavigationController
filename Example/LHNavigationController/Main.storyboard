@@ -8,7 +8,7 @@
         <!--Drag left-->
         <scene sceneID="wQg-tq-qST">
             <objects>
-                <viewController id="whP-gf-Uak" customClass="LHViewController" sceneMemberID="viewController">
+                <viewController id="whP-gf-Uak" customClass="FirstViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="uEw-UM-LJ8"/>
                         <viewControllerLayoutGuide type="bottom" id="Mvr-aV-6Um"/>
@@ -29,11 +29,36 @@
                             <constraint firstItem="okJ-tK-1zy" firstAttribute="top" secondItem="uEw-UM-LJ8" secondAttribute="bottom" id="mxl-Ul-fIc"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Drag left" id="MaT-4d-2mS"/>
+                    <navigationItem key="navigationItem" title="Drag left" id="MaT-4d-2mS">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="QkI-ow-Llp"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="fFy-7m-aWB">
+                            <connections>
+                                <segue destination="Ppg-L2-8Bp" kind="show" id="Iu8-mJ-PZo"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1117" y="433"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="kmu-hk-diM">
+            <objects>
+                <viewController id="Ppg-L2-8Bp" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Fu8-QW-phF"/>
+                        <viewControllerLayoutGuide type="bottom" id="KgG-7U-g04"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hkr-0l-yGK">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nZJ-C7-6rd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1825" y="433"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="UOD-wz-bIw">
@@ -51,7 +76,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="44H-LX-VsD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="305" y="433"/>
+            <point key="canvasLocation" x="533" y="433"/>
         </scene>
     </scenes>
     <resources>

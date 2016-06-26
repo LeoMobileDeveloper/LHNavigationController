@@ -18,5 +18,10 @@
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "LHNavigationController/Classes/**/*"
+  "source_files": "LHNavigationController/Classes/**/*",
+  "resource_bundles": {
+    "LHNavigationController": [
+      "LHNavigationController/Assets/*"
+    ]
+  }
 }

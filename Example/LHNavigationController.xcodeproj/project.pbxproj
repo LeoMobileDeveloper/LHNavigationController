@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		526003D51D18EA9C00B15B62 /* s.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 526003D41D18EA9C00B15B62 /* s.jpg */; };
+		52C5E11D1D1FD0B400B7FCB1 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C5E11C1D1FD0B400B7FCB1 /* FirstViewController.m */; };
+		52C5E1241D1FDB5200B7FCB1 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C5E1231D1FDB5200B7FCB1 /* SecondViewController.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
 		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
 		6003F59E195388D20070C39A /* LHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* LHAppDelegate.m */; };
-		6003F5A7195388D20070C39A /* LHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* LHViewController.m */; };
 		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
@@ -40,6 +41,10 @@
 		193858EBD53E936AB1E3512A /* Pods-LHNavigationController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LHNavigationController_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LHNavigationController_Tests/Pods-LHNavigationController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		523D8423E50DF7025D8F86F5 /* Pods-LHNavigationController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LHNavigationController_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LHNavigationController_Tests/Pods-LHNavigationController_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		526003D41D18EA9C00B15B62 /* s.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = s.jpg; sourceTree = "<group>"; };
+		52C5E11B1D1FD0B400B7FCB1 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		52C5E11C1D1FD0B400B7FCB1 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		52C5E1221D1FDB5200B7FCB1 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		52C5E1231D1FDB5200B7FCB1 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* LHNavigationController_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LHNavigationController_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -50,8 +55,6 @@
 		6003F59B195388D20070C39A /* LHNavigationController-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LHNavigationController-Prefix.pch"; sourceTree = "<group>"; };
 		6003F59C195388D20070C39A /* LHAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHAppDelegate.h; sourceTree = "<group>"; };
 		6003F59D195388D20070C39A /* LHAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHAppDelegate.m; sourceTree = "<group>"; };
-		6003F5A5195388D20070C39A /* LHViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHViewController.h; sourceTree = "<group>"; };
-		6003F5A6195388D20070C39A /* LHViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHViewController.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6003F5AE195388D20070C39A /* LHNavigationController_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LHNavigationController_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -146,9 +149,11 @@
 				526003D41D18EA9C00B15B62 /* s.jpg */,
 				6003F59C195388D20070C39A /* LHAppDelegate.h */,
 				6003F59D195388D20070C39A /* LHAppDelegate.m */,
+				52C5E11B1D1FD0B400B7FCB1 /* FirstViewController.h */,
+				52C5E11C1D1FD0B400B7FCB1 /* FirstViewController.m */,
+				52C5E1221D1FDB5200B7FCB1 /* SecondViewController.h */,
+				52C5E1231D1FDB5200B7FCB1 /* SecondViewController.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
-				6003F5A5195388D20070C39A /* LHViewController.h */,
-				6003F5A6195388D20070C39A /* LHViewController.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
@@ -394,8 +399,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52C5E1241D1FDB5200B7FCB1 /* SecondViewController.m in Sources */,
 				6003F59E195388D20070C39A /* LHAppDelegate.m in Sources */,
-				6003F5A7195388D20070C39A /* LHViewController.m in Sources */,
+				52C5E11D1D1FD0B400B7FCB1 /* FirstViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

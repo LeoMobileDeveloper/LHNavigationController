@@ -32,9 +32,9 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'LHNavigationController/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'LHNavigationController' => ['LHNavigationController/Assets/*.png']
-  # }
+   s.resource_bundles = {
+     'LHNavigationController' => ['LHNavigationController/Assets/*']
+   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

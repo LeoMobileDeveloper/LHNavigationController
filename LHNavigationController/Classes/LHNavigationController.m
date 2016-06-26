@@ -28,20 +28,25 @@
     }
     return _transition;
 }
+#pragma mark - Life circle
 
 - (void)viewDidLoad{
     [super viewDidLoad];
+    [self setNavigationBarHidden:YES];
     _isInteractive = NO;
     self.pushPan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePush:)];
     self.pushPan.delegate = self;
+    self.pushPan.cancelsTouchesInView = NO;
     [self.view addGestureRecognizer:self.pushPan];
     
     self.popPan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePop:)];
     self.popPan.delegate = self;
+    self.popPan.cancelsTouchesInView = NO;
     [self.view addGestureRecognizer:self.popPan];
     self.delegate = self;
 }
 
+#pragma mark - Gesture
 - (void)handlePush:(UIScreenEdgePanGestureRecognizer *)sender{
     CGFloat tx = [sender translationInView:self.view].x;
     CGFloat pec = fabs(tx/CGRectGetWidth(self.view.frame));
@@ -91,14 +96,14 @@
         UIViewController * topMost = self.viewControllers.lastObject;
         if ([self.lhDelegate respondsToSelector:@selector(viewControllerAfterController:)]) {
             UIViewController * nvc = [self.lhDelegate viewControllerAfterController:topMost];
-            return nvc != nil  & velocity.x < 0;
+            return nvc != nil  && velocity.x < 0;
         }
         return NO;
     }else{
         return velocity.x > 0 && self.viewControllers.count > 1;
     }
 }
-
+#pragma mark - Transition
 - (id<UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController animationControllerForOperation:(UINavigationControllerOperation)operation
                                                fromViewController:(UIViewController *)fromVC
                                                  toViewController:(UIViewController *)toVC{
