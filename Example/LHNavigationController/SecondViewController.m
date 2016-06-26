@@ -12,9 +12,18 @@
 
 - (void)viewDidLoad{
     [super viewDidLoad];
-    self.lh_navigationItem.title = @"Second";
+    self.lh_navigationItem.title = @"Pan right";
     self.barTintColor = [UIColor orangeColor];
     self.barTitlesTintColor = [UIColor whiteColor];
+    self.barItemsTintColor = [UIColor whiteColor];
+    UIBarButtonItem * leftItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"backIcon"]
+                                                                  style:UIBarButtonItemStylePlain
+                                                                 target:self
+                                                                 action:@selector(back)];;
+    self.lh_navigationItem.leftBarButtonItem = leftItem;
+}
+- (void)back{
+    [self.navigationController popViewControllerAnimated:YES];
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return 20.0;

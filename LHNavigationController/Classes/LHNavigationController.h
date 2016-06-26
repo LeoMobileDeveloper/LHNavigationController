@@ -20,6 +20,9 @@
 
 @interface LHNavigationController : UINavigationController
 
+/**
+ *  Use this delegate to "pan left to push"
+ */
 @property (weak,nonatomic) id<LHNavigationControllerDelegate> lhDelegate;
 
 @end

@@ -16,7 +16,7 @@
     }
     return self;
 }
-- (CGFloat)transitionDuration:(id<UIViewControllerContextTransitioning>)transitionContext{
+- (NSTimeInterval)transitionDuration:(id<UIViewControllerContextTransitioning>)transitionContext{
     return 0.3;
 }
 - (void)animateTransition:(id<UIViewControllerContextTransitioning>)transitionContext{

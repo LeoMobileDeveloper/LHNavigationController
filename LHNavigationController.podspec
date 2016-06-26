@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'LHNavigationController'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of LHNavigationController.'
+  s.summary          = 'A UINavigationController subclass that allow you push/pop with full screen pan'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,24 +17,23 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+  s.description      = 'A UINavigationController subclass that allow you push/pop with full screen pan(类似网易新闻，支持全屏push/pop)'
 
-  s.homepage         = 'https://github.com/<GITHUB_USERNAME>/LHNavigationController'
+
+  s.homepage         = 'https://github.com/LeoMobileDeveloper/LHNavigationController'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Leo' => 'leomobiledeveloper' }
-  s.source           = { :git => 'https://github.com/<GITHUB_USERNAME>/LHNavigationController.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/LeoMobileDeveloper/LHNavigationController.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'LHNavigationController/Classes/**/*'
   
-   s.resource_bundles = {
-     'LHNavigationController' => ['LHNavigationController/Assets/*']
-   }
+  # s.resource_bundles = {
+  #   'LHNavigationController' => ['LHNavigationController/Assets/*.png']
+  # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

@@ -8,9 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "LHViewController.h"
+/**
+ *  The base class of Tabelview controller 
+ */
 @interface LHTableViewController : LHViewController<UITableViewDelegate,UITableViewDataSource>
 
 @property (strong,nonatomic)UITableView * tableView;
 
 - (instancetype)initWithStyle:(UITableViewStyle)style;
+
 @end

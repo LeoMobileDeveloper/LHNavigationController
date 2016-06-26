@@ -10,6 +10,7 @@
 		526003D51D18EA9C00B15B62 /* s.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 526003D41D18EA9C00B15B62 /* s.jpg */; };
 		52C5E11D1D1FD0B400B7FCB1 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C5E11C1D1FD0B400B7FCB1 /* FirstViewController.m */; };
 		52C5E1241D1FDB5200B7FCB1 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C5E1231D1FDB5200B7FCB1 /* SecondViewController.m */; };
+		52C5E12E1D1FE68D00B7FCB1 /* backIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 52C5E12D1D1FE68D00B7FCB1 /* backIcon@2x.png */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -45,6 +46,7 @@
 		52C5E11C1D1FD0B400B7FCB1 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		52C5E1221D1FDB5200B7FCB1 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		52C5E1231D1FDB5200B7FCB1 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		52C5E12D1D1FE68D00B7FCB1 /* backIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backIcon@2x.png"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* LHNavigationController_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LHNavigationController_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -147,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				526003D41D18EA9C00B15B62 /* s.jpg */,
+				52C5E12D1D1FE68D00B7FCB1 /* backIcon@2x.png */,
 				6003F59C195388D20070C39A /* LHAppDelegate.h */,
 				6003F59D195388D20070C39A /* LHAppDelegate.m */,
 				52C5E11B1D1FD0B400B7FCB1 /* FirstViewController.h */,
@@ -284,6 +287,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52C5E12E1D1FE68D00B7FCB1 /* backIcon@2x.png in Resources */,
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
@@ -526,6 +530,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LHNavigationController/LHNavigationController-Prefix.pch";
 				INFOPLIST_FILE = "LHNavigationController/LHNavigationController-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -542,6 +547,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LHNavigationController/LHNavigationController-Prefix.pch";
 				INFOPLIST_FILE = "LHNavigationController/LHNavigationController-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";

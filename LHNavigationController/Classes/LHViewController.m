@@ -79,22 +79,7 @@
     [self.view bringSubviewToFront:self.lh_navigationBar];
     self.view.backgroundColor = [UIColor whiteColor];
     self.lh_navigationBar.translucent = NO;
-    if (self.lh_navigationController.viewControllers.count > 1) {
-        UIImage * backImage = [UIImage imageNamed:@"backIcon.png"];
-        UIBarButtonItem * item = [[UIBarButtonItem alloc] initWithImage:backImage
-                                                                  style:UIBarButtonItemStylePlain
-                                                                 target:self
-                                                                 action:@selector(lhback:)];
-        [self.lh_navigationItem setLeftBarButtonItem:item];
-    }
 }
-- (void)lhback:(UIBarButtonItem *)item{
-    [self.lh_navigationController popViewControllerAnimated:YES];
-}
-- (void)viewWillAppear:(BOOL)animated{
-    [super viewWillAppear:animated];
-}
-
 - (void)setBarTintColor:(UIColor *)barTintColor{
     _barTintColor = barTintColor;
     self.view.backgroundColor = barTintColor;
@@ -102,12 +87,12 @@
 }
 
 - (void)setBarItemsTintColor:(UIColor *)barItemsTintColor{
-    _barItemsTintColor = _barItemsTintColor;
+    _barItemsTintColor = barItemsTintColor;
     self.lh_navigationBar.tintColor = barItemsTintColor;
 }
 
 - (void)setBarTitlesTintColor:(UIColor *)barTitlesTintColor{
-    _barTitlesTintColor = _barTitlesTintColor;
+    _barTitlesTintColor = barTitlesTintColor;
     NSMutableDictionary * titleAttributs = [self.lh_navigationBar.titleTextAttributes mutableCopy];
     if (titleAttributs == nil) {
         titleAttributs = [NSMutableDictionary new];
@@ -118,7 +103,7 @@
 - (LHNavigationController *)lh_navigationController{
     UINavigationController * nav = self.navigationController;
     if ([nav isKindOfClass:[LHNavigationController class]]) {
-        return nav;
+        return (LHNavigationController *)nav;
     }
     return nil;
 }

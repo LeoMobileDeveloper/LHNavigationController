@@ -9,6 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "LHNavigationController.h"
 
+/**
+ *  Use subclass of this to create your application
+ */
 @interface LHViewController : UIViewController
 
 /**

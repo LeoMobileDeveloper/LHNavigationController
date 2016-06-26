@@ -16,15 +16,18 @@
 
 -(void)viewDidLoad{
     [super viewDidLoad];
-    self.lh_navigationItem.title = @"title";
+    self.lh_navigationItem.title = @"Pan left";
     self.lh_navigationController.lhDelegate = self;
     self.barTintColor = [UIColor orangeColor];
     self.barItemsTintColor = [UIColor whiteColor];
     self.barTitlesTintColor = [UIColor whiteColor];
 }
 -(UIViewController *)viewControllerAfterController:(UIViewController *)controller{
-    SecondViewController * dvc = [[SecondViewController alloc] init];
-    return dvc;
+//    if (controller == self) {
+        SecondViewController * dvc = [[SecondViewController alloc] init];
+        return dvc;
+//    }
+//    return nil;
 }
 - (UIStatusBarStyle)preferredStatusBarStyle{
     return UIStatusBarStyleLightContent;

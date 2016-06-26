@@ -11,7 +11,6 @@
 		144D9DEC721BACDB0EC35BF059405971 /* LHTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BA99A6C693BAC9D58F83863298957E0 /* LHTableViewController.m */; };
 		1FDEB773AC57D7B6FE546517E39A9069 /* LHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 857050BD024ED145CDFD94A3974D3E4B /* LHViewController.m */; };
 		2EA8538916A22A50AB40F283249A8F58 /* LHViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = AEA509C6DCB489DAE17F5E207ED0730B /* LHViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		33E40645FC0BA0CBDA003AB9B1CAAB7B /* LHNavigationController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CB34DBD8ED8293FA29EF4D3BBD9F0781 /* LHNavigationController.bundle */; };
 		3BF61BA8B410A3FF95177CAE67EC8B89 /* LHNavAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = DE39A283B03F3DC334EC45C4383DD6DD /* LHNavAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		50C974E2208B15AE014D61FDD3D55B06 /* LHNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91137A1A0AE4FEE93A4CBD060448F258 /* LHNavigationController.m */; };
 		5158F07F7D7D0D3C6E438C480AA84357 /* LHNavigationController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CCD74F870090BB2E82FE4BFC9FB27F1A /* LHNavigationController-dummy.m */; };
@@ -74,7 +73,6 @@
 		BEA038EFC21E632487B323719833975C /* LHTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LHTableViewController.h; sourceTree = "<group>"; };
 		C135721713ED4BC458FA7AD1D06C965F /* Pods-LHNavigationController_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LHNavigationController_Tests-dummy.m"; sourceTree = "<group>"; };
 		C957C835B79507895436F99614F27322 /* Pods-LHNavigationController_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LHNavigationController_Example-umbrella.h"; sourceTree = "<group>"; };
-		CB34DBD8ED8293FA29EF4D3BBD9F0781 /* LHNavigationController.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; path = LHNavigationController.bundle; sourceTree = "<group>"; };
 		CCD74F870090BB2E82FE4BFC9FB27F1A /* LHNavigationController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LHNavigationController-dummy.m"; sourceTree = "<group>"; };
 		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		D50E02D1BED9C2E0352C2ED23A661FB0 /* LHNavigationController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = LHNavigationController.modulemap; sourceTree = "<group>"; };
@@ -276,7 +274,6 @@
 		D140A9683B6768FBCC59E407969CF3E1 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				CB34DBD8ED8293FA29EF4D3BBD9F0781 /* LHNavigationController.bundle */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -428,7 +425,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33E40645FC0BA0CBDA003AB9B1CAAB7B /* LHNavigationController.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
