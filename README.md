@@ -4,78 +4,77 @@
 
 # LHNavigationController
 
-LHNavigationController contains a collection of UIViewControllers that allow you to user full screen push/pop.
+LHNavigationController能够让你的App像网易新闻那样支持全屏的push/pop.
 
-* LHNavigationController hides its own navigation bar
-* LHViewControlelr/LHTableviewController create a `UINavigationBar` and add it as a subview during `viewDidLoad`
-
-## Install
+## 安装
 
 ```
 pod LHNavigationController
 ```
 
-## Gif
+## 效果
 
-<img src="https://raw.github.com/LeoMobileDeveloper/LHNavigationController/master/ScreenShots/gif.gif" width="300">
+<img src="https://raw.github.com/LeoMobileDeveloper/LHNavigationController/master/ScreenShots/gif.gif" width="200">
 
-## Classes
-
-There are main three classes
+## 类
+主要有三个类
 
 * LHNavigationController
 * LHTableViewController
 * LHViewController
 
-You must use these 3 classes or subclass to build the parts that using the feature of full screen push/pop.
+通常，你应该以这三个类为基类来建立你的App
 
 
 ## Pop
 
-Using full screen pop gesture is quite simple,you just need to use `LHNavigationController`
-
+想要支持全屏的Pop手势很简单，只需要把你的UINavigationController替换成LHNavigationController即可
 
 ## Push
 
-First set the `lhDelegate` of `LHNavigationController`
+实现全屏的Push需要你设置LHNavigationController的代理 `lhDelegate`
 
  ```
  @property (weak,nonatomic) id<LHNavigationControllerDelegate> lhDelegate;
 
  ```
- Then, return the viewController you want to push in 
+ 
+然后，在对应的方法中，返回将要push的controller
 
 ```
 - (UIViewController *)viewControllerAfterController:(UIViewController *)controller{
-   //Here controller is the top most controller
+   //这里的controller是导航堆栈最上面的那个
 }
 
 ``` 
 
-## Propertys
+## 属性
 
 ```
-// access navigationBar
+// 访问导航栏 
 @property (strong,nonatomic,readonly)UINavigationBar * lh_navigationBar;
 
-// access navigationItem
+// 访问navigationItem
 @property (strong,nonatomic,readonly)UINavigationItem * lh_navigationItem;
 
-// add subview
+// 用这个作为ContainView来增加删除subview
 @property (strong,nonatomic,readonly)UIView * lh_view;
 
-// access the NativationController
+// 访问LHNativationController
 @property (strong,nonatomic,readonly)LHNavigationController * lh_navigationController;
 
-// set the background color of NavigationBar
+// 设置NavigationBar背景色
 @property (strong,nonatomic)UIColor * barTintColor;
 
-// set the color of barbutton items
+// 设置BarButton颜色
 @property (strong,nonatomic)UIColor * barItemsTintColor;
-// set the color of bar title
+// 设置BarTitle颜色
 @property (strong,nonatomic)UIColor * barTitlesTintColor
 ```
 
+## 原理
+
+我在[这篇博客](http://blog.csdn.net/hello_hwc/article/details/51764459)里详细的讲解了这个库的实现原理。
 
 ## Author
 

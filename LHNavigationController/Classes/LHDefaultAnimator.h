@@ -13,7 +13,7 @@ typedef NS_ENUM(NSInteger,LHNavAnimatorOperation){
     LHNavAnimatorOperationPush,
     LHNavAnimatorOperationPop,
 };
-@interface LHNavAnimator : NSObject<UIViewControllerAnimatedTransitioning>
+@interface LHDefaultAnimator : NSObject<UIViewControllerAnimatedTransitioning>
 
 -(instancetype)initWithDirection:(LHNavAnimatorOperation)direction navigation:(UINavigationController *)nav;
 

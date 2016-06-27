@@ -6,9 +6,9 @@
 //  Copyright © 2016年 Leo. All rights reserved.
 //
 
-#import "LHNavAnimator.h"
+#import "LHDefaultAnimator.h"
 
-@implementation LHNavAnimator
+@implementation LHDefaultAnimator
 - (instancetype)initWithDirection:(LHNavAnimatorOperation)operation navigation:(UINavigationController *)nav{
     if (self = [super init]) {
         _operation = operation;

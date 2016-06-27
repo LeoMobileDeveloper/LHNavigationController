@@ -7,7 +7,7 @@
 //
 
 #import "LHNavigationController.h"
-#import "LHNavAnimator.h"
+#import "LHDefaultAnimator.h"
 
 @interface LHNavigationController ()<UINavigationControllerDelegate,UIGestureRecognizerDelegate>
 
@@ -104,11 +104,11 @@
                                                fromViewController:(UIViewController *)fromVC
                                                  toViewController:(UIViewController *)toVC{
     if (operation == UINavigationControllerOperationPush) {
-        return [[LHNavAnimator alloc] initWithDirection:LHNavAnimatorOperationPush
+        return [[LHDefaultAnimator alloc] initWithDirection:LHNavAnimatorOperationPush
                                              navigation:self];
     }
     if (operation == UINavigationControllerOperationPop) {
-        return [[LHNavAnimator alloc] initWithDirection:LHNavAnimatorOperationPop
+        return [[LHDefaultAnimator alloc] initWithDirection:LHNavAnimatorOperationPop
                                              navigation:self];
     }
     return nil;

@@ -12,7 +12,7 @@
 
 - (instancetype)initWithCollectionViewLayout:(UICollectionViewLayout *)layout;
 
-@property(nonatomic, strong) UICollectionView *collectionView;
+@property(nonatomic, strong) UICollectionView * collectionView;
 
 @property(nonatomic, readonly) UICollectionViewLayout *collectionViewLayout;
 

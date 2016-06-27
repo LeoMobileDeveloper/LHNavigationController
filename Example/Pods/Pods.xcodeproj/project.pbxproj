@@ -11,11 +11,13 @@
 		144D9DEC721BACDB0EC35BF059405971 /* LHTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BA99A6C693BAC9D58F83863298957E0 /* LHTableViewController.m */; };
 		1FDEB773AC57D7B6FE546517E39A9069 /* LHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 857050BD024ED145CDFD94A3974D3E4B /* LHViewController.m */; };
 		2EA8538916A22A50AB40F283249A8F58 /* LHViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = AEA509C6DCB489DAE17F5E207ED0730B /* LHViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3BF61BA8B410A3FF95177CAE67EC8B89 /* LHNavAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = DE39A283B03F3DC334EC45C4383DD6DD /* LHNavAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BF61BA8B410A3FF95177CAE67EC8B89 /* LHDefaultAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = DE39A283B03F3DC334EC45C4383DD6DD /* LHDefaultAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		50C974E2208B15AE014D61FDD3D55B06 /* LHNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91137A1A0AE4FEE93A4CBD060448F258 /* LHNavigationController.m */; };
 		5158F07F7D7D0D3C6E438C480AA84357 /* LHNavigationController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CCD74F870090BB2E82FE4BFC9FB27F1A /* LHNavigationController-dummy.m */; };
 		52B4B2B71D20D86600C73C19 /* LHCollectionViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 52B4B2B51D20D86600C73C19 /* LHCollectionViewController.h */; };
 		52B4B2B81D20D86600C73C19 /* LHCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52B4B2B61D20D86600C73C19 /* LHCollectionViewController.m */; };
+		52B4B2BB1D20DD0200C73C19 /* LH3DAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 52B4B2B91D20DD0200C73C19 /* LH3DAnimator.h */; };
+		52B4B2BC1D20DD0200C73C19 /* LH3DAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 52B4B2BA1D20DD0200C73C19 /* LH3DAnimator.m */; };
 		5A016BC15016C2056D1042026EF0B850 /* Pods-LHNavigationController_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C135721713ED4BC458FA7AD1D06C965F /* Pods-LHNavigationController_Tests-dummy.m */; };
 		5E1759DACEBE986DCA1F659ED152BE99 /* LHNavigationController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5A5FF61E244EA13B6F026F5BB4C7438C /* LHNavigationController.bundle */; };
 		78A81DC5007FEDBBB68F09BCF4324B20 /* Pods-LHNavigationController_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C957C835B79507895436F99614F27322 /* Pods-LHNavigationController_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -26,7 +28,7 @@
 		A026C717455E3ABEEC2E6E99871A9654 /* Pods-LHNavigationController_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B5EE3234FDCB4E5CEA4FCC7DBE15BFFE /* Pods-LHNavigationController_Example-dummy.m */; };
 		B5572F787E68A62DA3D7FE60E5A4B49A /* LHNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = ADA94B988230CD898479664EEB39A8EF /* LHNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C2597B82780AE404F2DB32019561425A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		D40E136EF0F4F3CD5F42ACE57DAB5348 /* LHNavAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = A09F692DE576FF3855E52A5BA8EC4E5A /* LHNavAnimator.m */; };
+		D40E136EF0F4F3CD5F42ACE57DAB5348 /* LHDefaultAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = A09F692DE576FF3855E52A5BA8EC4E5A /* LHDefaultAnimator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		4C5FF809D4D03771CD77AB1CE3D59B66 /* Pods-LHNavigationController_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LHNavigationController_Example-resources.sh"; sourceTree = "<group>"; };
 		52B4B2B51D20D86600C73C19 /* LHCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHCollectionViewController.h; sourceTree = "<group>"; };
 		52B4B2B61D20D86600C73C19 /* LHCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHCollectionViewController.m; sourceTree = "<group>"; };
+		52B4B2B91D20DD0200C73C19 /* LH3DAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LH3DAnimator.h; sourceTree = "<group>"; };
+		52B4B2BA1D20DD0200C73C19 /* LH3DAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LH3DAnimator.m; sourceTree = "<group>"; };
 		5A5FF61E244EA13B6F026F5BB4C7438C /* LHNavigationController.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LHNavigationController.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BA99A6C693BAC9D58F83863298957E0 /* LHTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LHTableViewController.m; sourceTree = "<group>"; };
 		62310A52DEB2CE3482E759277A396442 /* Pods-LHNavigationController_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-LHNavigationController_Tests.modulemap"; sourceTree = "<group>"; };
@@ -66,7 +70,7 @@
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		93ED9C4D896441296F85F9CF2645EE72 /* LHNavigationController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LHNavigationController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F19D7B974023A2AD9E7E1B1DA7793C2 /* LHNavigationController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LHNavigationController-umbrella.h"; sourceTree = "<group>"; };
-		A09F692DE576FF3855E52A5BA8EC4E5A /* LHNavAnimator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LHNavAnimator.m; sourceTree = "<group>"; };
+		A09F692DE576FF3855E52A5BA8EC4E5A /* LHDefaultAnimator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LHDefaultAnimator.m; sourceTree = "<group>"; };
 		ADA94B988230CD898479664EEB39A8EF /* LHNavigationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LHNavigationController.h; sourceTree = "<group>"; };
 		AEA509C6DCB489DAE17F5E207ED0730B /* LHViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LHViewController.h; sourceTree = "<group>"; };
 		B0208EB498D2FD7B50E1B49279C6DBD5 /* Pods-LHNavigationController_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LHNavigationController_Tests-frameworks.sh"; sourceTree = "<group>"; };
@@ -82,7 +86,7 @@
 		D50E02D1BED9C2E0352C2ED23A661FB0 /* LHNavigationController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = LHNavigationController.modulemap; sourceTree = "<group>"; };
 		D77A9321838029C9BB116A03952E9435 /* Pods-LHNavigationController_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LHNavigationController_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		DB6B9D79CB500343339FDD88F8ADBBD1 /* ResourceBundle-LHNavigationController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-LHNavigationController-Info.plist"; sourceTree = "<group>"; };
-		DE39A283B03F3DC334EC45C4383DD6DD /* LHNavAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LHNavAnimator.h; sourceTree = "<group>"; };
+		DE39A283B03F3DC334EC45C4383DD6DD /* LHDefaultAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LHDefaultAnimator.h; sourceTree = "<group>"; };
 		E8C362596F2A9DD821C89F9B34B30C5F /* Pods-LHNavigationController_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LHNavigationController_Example-frameworks.sh"; sourceTree = "<group>"; };
 		EBA104BCB54E70E4F99CB5B867245107 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED68E99A0649EC9D9677FE7D9D284AB4 /* Pods_LHNavigationController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LHNavigationController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -207,8 +211,10 @@
 		55FB78BA6CA83BA7F5C24C7D3E52A637 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				DE39A283B03F3DC334EC45C4383DD6DD /* LHNavAnimator.h */,
-				A09F692DE576FF3855E52A5BA8EC4E5A /* LHNavAnimator.m */,
+				DE39A283B03F3DC334EC45C4383DD6DD /* LHDefaultAnimator.h */,
+				A09F692DE576FF3855E52A5BA8EC4E5A /* LHDefaultAnimator.m */,
+				52B4B2B91D20DD0200C73C19 /* LH3DAnimator.h */,
+				52B4B2BA1D20DD0200C73C19 /* LH3DAnimator.m */,
 				AEA509C6DCB489DAE17F5E207ED0730B /* LHViewController.h */,
 				857050BD024ED145CDFD94A3974D3E4B /* LHViewController.m */,
 				ADA94B988230CD898479664EEB39A8EF /* LHNavigationController.h */,
@@ -307,11 +313,12 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BF61BA8B410A3FF95177CAE67EC8B89 /* LHNavAnimator.h in Headers */,
+				3BF61BA8B410A3FF95177CAE67EC8B89 /* LHDefaultAnimator.h in Headers */,
 				52B4B2B71D20D86600C73C19 /* LHCollectionViewController.h in Headers */,
 				84FAD0F9EA86576C5B34B0B78F0FD831 /* LHNavigationController-umbrella.h in Headers */,
 				B5572F787E68A62DA3D7FE60E5A4B49A /* LHNavigationController.h in Headers */,
 				802FEBF4C2B1AD221E93E8148E660B6A /* LHTableViewController.h in Headers */,
+				52B4B2BB1D20DD0200C73C19 /* LH3DAnimator.h in Headers */,
 				2EA8538916A22A50AB40F283249A8F58 /* LHViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -457,8 +464,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D40E136EF0F4F3CD5F42ACE57DAB5348 /* LHNavAnimator.m in Sources */,
+				D40E136EF0F4F3CD5F42ACE57DAB5348 /* LHDefaultAnimator.m in Sources */,
 				5158F07F7D7D0D3C6E438C480AA84357 /* LHNavigationController-dummy.m in Sources */,
+				52B4B2BC1D20DD0200C73C19 /* LH3DAnimator.m in Sources */,
 				52B4B2B81D20D86600C73C19 /* LHCollectionViewController.m in Sources */,
 				50C974E2208B15AE014D61FDD3D55B06 /* LHNavigationController.m in Sources */,
 				144D9DEC721BACDB0EC35BF059405971 /* LHTableViewController.m in Sources */,
