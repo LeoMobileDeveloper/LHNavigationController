@@ -104,10 +104,12 @@
                                                fromViewController:(UIViewController *)fromVC
                                                  toViewController:(UIViewController *)toVC{
     if (operation == UINavigationControllerOperationPush) {
-        return [[LHNavAnimator alloc] initWithDirection:LHNavAnimatorOperationPush navigation:self];
+        return [[LHNavAnimator alloc] initWithDirection:LHNavAnimatorOperationPush
+                                             navigation:self];
     }
     if (operation == UINavigationControllerOperationPop) {
-        return [[LHNavAnimator alloc] initWithDirection:LHNavAnimatorOperationPop navigation:self];
+        return [[LHNavAnimator alloc] initWithDirection:LHNavAnimatorOperationPop
+                                             navigation:self];
     }
     return nil;
 }

@@ -20,14 +20,19 @@
     }
     return self;
 }
+- (UITableView *)tableView{
+    if (_tableView == nil) {
+        _tableView = [[UITableView alloc] initWithFrame:self.lh_view.bounds style:_tableStyle];
+    }
+    return _tableView;
+}
 - (void)viewDidLoad{
     [super viewDidLoad];
     self.automaticallyAdjustsScrollViewInsets = NO;
-    _tableView = [[UITableView alloc] initWithFrame:self.lh_view.bounds style:_tableStyle];
-    _tableView.delegate = self;
-    _tableView.dataSource = self;
-    _tableView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-    [self.lh_view addSubview:_tableView];
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
+    self.tableView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    [self.lh_view addSubview:self.tableView];
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     [NSException raise:@"LHTableviewController exception" format:@"Subclass should override this method at %d",__LINE__];
