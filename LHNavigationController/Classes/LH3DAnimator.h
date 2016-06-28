@@ -6,8 +6,8 @@
 //
 //
 
-#import <Foundation/Foundation.h>
+#import "LHBaseAnimator.h"
 
-@interface LH3DAnimator : NSObject
+@interface LH3DAnimator : LHBaseAnimator
 
 @end

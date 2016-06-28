@@ -16,6 +16,7 @@
 
 -(void)viewDidLoad{
     [super viewDidLoad];
+    self.lh_navigationController.lh_transtionStyle = LHNavigationTransitionStyle3D;
     self.lh_navigationItem.title = @"Pan left";
     self.lh_navigationController.lhDelegate = self;
     self.barTintColor = [UIColor orangeColor];

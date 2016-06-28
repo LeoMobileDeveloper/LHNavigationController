@@ -28,8 +28,31 @@
     }
     return _transition;
 }
+- (instancetype)init{
+    if (self = [super init]) {
+        _transition = LHNavigationTransitionStyleDefault;
+    }
+    return self;
+}
+- (instancetype)initWithCoder:(NSCoder *)aDecoder{
+    if (self = [super initWithCoder:aDecoder]) {
+        _transition = LHNavigationTransitionStyleDefault;
+    }
+    return self;
+}
+- (instancetype)initWithRootViewController:(UIViewController *)rootViewController{
+    if (self = [super initWithRootViewController:rootViewController]) {
+        _transition = LHNavigationTransitionStyleDefault;
+    }
+    return self;
+}
+- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil{
+    if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
+        _transition = LHNavigationTransitionStyleDefault;
+    }
+    return self;
+}
 #pragma mark - Life circle
-
 - (void)viewDidLoad{
     [super viewDidLoad];
     [self setNavigationBarHidden:YES];
@@ -103,15 +126,15 @@
 - (id<UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController animationControllerForOperation:(UINavigationControllerOperation)operation
                                                fromViewController:(UIViewController *)fromVC
                                                  toViewController:(UIViewController *)toVC{
+    LHNavAnimatorOperation direaction;
+    
     if (operation == UINavigationControllerOperationPush) {
-        return [[LHDefaultAnimator alloc] initWithDirection:LHNavAnimatorOperationPush
-                                             navigation:self];
+        direaction = LHNavAnimatorOperationPush;
     }
     if (operation == UINavigationControllerOperationPop) {
-        return [[LHDefaultAnimator alloc] initWithDirection:LHNavAnimatorOperationPop
-                                             navigation:self];
+        direaction = LHNavAnimatorOperationPop;
     }
-    return nil;
+    return [LHBaseAnimator animatorWithStyle:_lh_transtionStyle direction:direaction navigation:self];
 }
 
 - (id<UIViewControllerInteractiveTransitioning>)navigationController:(UINavigationController *)navigationController

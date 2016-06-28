@@ -14,14 +14,21 @@ pod LHNavigationController
 
 ## 效果
 
+默认效果
+
 <img src="https://raw.github.com/LeoMobileDeveloper/LHNavigationController/master/ScreenShots/gif.gif" width="200">
 
+3d效果
+
+<img src="https://raw.github.com/LeoMobileDeveloper/LHNavigationController/master/ScreenShots/gif2.gif" width="200">
+
 ## 类
-主要有三个类
+主要有四个类
 
 * LHNavigationController
-* LHTableViewController
 * LHViewController
+* LHTableViewController
+* LHCollectionViewController
 
 通常，你应该以这三个类为基类来建立你的App
 
@@ -50,6 +57,8 @@ pod LHNavigationController
 
 ## 属性
 
+LHViewController
+
 ```
 // 访问导航栏 
 @property (strong,nonatomic,readonly)UINavigationBar * lh_navigationBar;
@@ -72,6 +81,13 @@ pod LHNavigationController
 @property (strong,nonatomic)UIColor * barTitlesTintColor
 ```
 
+LHNavigationController
+
+```
+//设置转换风格，支持默认和3D两种
+@property (assign,nonatomic) LHNavigationTransitionStyle lh_transtionStyle;
+
+```
 ## 原理
 
 我在[这篇博客](http://blog.csdn.net/hello_hwc/article/details/51764459)里详细的讲解了这个库的实现原理。

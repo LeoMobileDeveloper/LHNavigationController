@@ -9,13 +9,6 @@
 #import "LHDefaultAnimator.h"
 
 @implementation LHDefaultAnimator
-- (instancetype)initWithDirection:(LHNavAnimatorOperation)operation navigation:(UINavigationController *)nav{
-    if (self = [super init]) {
-        _operation = operation;
-        _nav = nav;
-    }
-    return self;
-}
 - (NSTimeInterval)transitionDuration:(id<UIViewControllerContextTransitioning>)transitionContext{
     return 0.3;
 }
@@ -34,8 +27,8 @@
     
     [containView addSubview:toView];
     
-    if (_operation == LHNavAnimatorOperationPush) {
-        _nav.view.userInteractionEnabled = NO;
+    if (self.operation == LHNavAnimatorOperationPush) {
+        self.nav.view.userInteractionEnabled = NO;
         toView.transform = CGAffineTransformMakeTranslation(toTransition, 0);
         fromView.transform = CGAffineTransformIdentity;
         [containView bringSubviewToFront:toView];
@@ -46,7 +39,7 @@
                              toView.transform = CGAffineTransformIdentity;
                              fromView.transform = CGAffineTransformMakeTranslation(-1 * fromTranstion, 0);
                          } completion:^(BOOL finished) {
-                             _nav.view.userInteractionEnabled = YES;
+                             self.nav.view.userInteractionEnabled = YES;
                              fromView.transform = CGAffineTransformIdentity;
                              toView.transform = CGAffineTransformIdentity;
                              BOOL canceled = [transitionContext transitionWasCancelled];
@@ -56,7 +49,7 @@
         [containView bringSubviewToFront:fromView];
         toView.transform = CGAffineTransformMakeTranslation(-1 * fromTranstion, 0);
         fromView.transform = CGAffineTransformIdentity;
-        _nav.view.userInteractionEnabled = NO;
+        self.nav.view.userInteractionEnabled = NO;
         [UIView animateWithDuration:duration
                               delay:0.0
                             options:UIViewAnimationOptionCurveLinear
@@ -64,7 +57,7 @@
                              toView.transform = CGAffineTransformIdentity;
                              fromView.transform = CGAffineTransformMakeTranslation(toTransition, 0);
                          } completion:^(BOOL finished) {
-                             _nav.view.userInteractionEnabled = YES;
+                             self.nav.view.userInteractionEnabled = YES;
                              fromView.transform = CGAffineTransformIdentity;
                              toView.transform = CGAffineTransformIdentity;
                              BOOL canceled = [transitionContext transitionWasCancelled];

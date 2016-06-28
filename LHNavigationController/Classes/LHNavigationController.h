@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LHBaseAnimator.h"
+
 @protocol LHNavigationControllerDelegate<NSObject>
 /**
  *  The view controller that after top most controller
@@ -24,5 +26,7 @@
  *  Use this delegate to "pan left to push"
  */
 @property (weak,nonatomic) id<LHNavigationControllerDelegate> lhDelegate;
+
+@property (assign,nonatomic) LHNavigationTransitionStyle lh_transtionStyle;
 
 @end
