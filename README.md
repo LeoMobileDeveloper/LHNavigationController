@@ -1,5 +1,5 @@
 
-[![Version](https://img.shields.io/cocoapods/v/LHNavigationController.svg?style=flat)](http://cocoapods.org/pods/LHNavigationController)
+[![Build Status](https://travis-ci.org/LeoMobileDeveloper/LHNavigationController.svg?branch=master)](https://travis-ci.org/LeoMobileDeveloper/LHProgressHUD)  [![License: MIT](https://img.shields.io/cocoapods/l/LHNavigationController.svg?style=flat)](http://opensource.org/licenses/MIT)  [![Version](https://img.shields.io/cocoapods/v/LHNavigationController.svg?style=flat)](http://cocoapods.org/pods/LHNavigationController)
 
 
 # LHNavigationController
@@ -30,7 +30,7 @@ pod LHNavigationController
 * LHTableViewController
 * LHCollectionViewController
 
-通常，你应该以这三个类为基类来建立你的App
+通常，你应该以这四个类为基类来建立你的App
 
 
 ## Pop
