@@ -7,6 +7,7 @@
 //
 
 #import "SecondViewController.h"
+#import "ThridViewController.h"
 
 @implementation SecondViewController
 
@@ -36,6 +37,10 @@
     }
     cell.textLabel.text = [NSString stringWithFormat:@"index:%ld",(long)indexPath.row];
     return cell;
+}
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    ThridViewController * tvc = [[ThridViewController alloc] init];
+    [self.navigationController pushViewController:tvc animated:YES];
 }
 - (UIStatusBarStyle)preferredStatusBarStyle{
     return UIStatusBarStyleLightContent;

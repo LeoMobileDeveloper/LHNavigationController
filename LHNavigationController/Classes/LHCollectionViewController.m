@@ -9,11 +9,16 @@
 #import "LHCollectionViewController.h"
 
 @implementation LHCollectionViewController
+
 - (UICollectionView *)collectionView{
     if (_collectionView == nil) {
         _collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:_collectionViewLayout];
     }
     return _collectionView;
+}
+- (instancetype)init{
+    UICollectionViewFlowLayout * flowLayout = [[UICollectionViewFlowLayout alloc] init];
+    return [self initWithCollectionViewLayout:flowLayout];
 }
 - (instancetype)initWithCollectionViewLayout:(UICollectionViewLayout *)layout{
     if (self = [super init]) {
@@ -31,12 +36,12 @@
     [self.lh_view addSubview:self.collectionView];
 }
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
-    [NSException raise:@"LHCollectionViewController exception" format:@"Subclass should override this method at %@ %d",__FILE__,__LINE__];
+    [NSException raise:@"LHCollectionViewController exception" format:@"Subclass should override this method at %s %d",__FILE__,__LINE__];
     return 0;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
-    [NSException raise:@"LHCollectionViewController exception" format:@"Subclass should override this method at %@ %d",__FILE__,__LINE__];
+    [NSException raise:@"LHCollectionViewController exception" format:@"Subclass should override this method at %s %d",__FILE__,__LINE__];
     return nil;
 }
 @end

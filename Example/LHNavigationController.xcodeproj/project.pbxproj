@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		525A82581D22456F0021E4BB /* ThridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 525A82571D22456F0021E4BB /* ThridViewController.m */; };
 		526003D51D18EA9C00B15B62 /* s.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 526003D41D18EA9C00B15B62 /* s.jpg */; };
 		52C5E11D1D1FD0B400B7FCB1 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C5E11C1D1FD0B400B7FCB1 /* FirstViewController.m */; };
 		52C5E1241D1FDB5200B7FCB1 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C5E1231D1FDB5200B7FCB1 /* SecondViewController.m */; };
@@ -41,6 +42,8 @@
 /* Begin PBXFileReference section */
 		193858EBD53E936AB1E3512A /* Pods-LHNavigationController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LHNavigationController_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LHNavigationController_Tests/Pods-LHNavigationController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		523D8423E50DF7025D8F86F5 /* Pods-LHNavigationController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LHNavigationController_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LHNavigationController_Tests/Pods-LHNavigationController_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		525A82561D22456F0021E4BB /* ThridViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThridViewController.h; sourceTree = "<group>"; };
+		525A82571D22456F0021E4BB /* ThridViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThridViewController.m; sourceTree = "<group>"; };
 		526003D41D18EA9C00B15B62 /* s.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = s.jpg; sourceTree = "<group>"; };
 		52C5E11B1D1FD0B400B7FCB1 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		52C5E11C1D1FD0B400B7FCB1 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
@@ -156,6 +159,8 @@
 				52C5E11C1D1FD0B400B7FCB1 /* FirstViewController.m */,
 				52C5E1221D1FDB5200B7FCB1 /* SecondViewController.h */,
 				52C5E1231D1FDB5200B7FCB1 /* SecondViewController.m */,
+				525A82561D22456F0021E4BB /* ThridViewController.h */,
+				525A82571D22456F0021E4BB /* ThridViewController.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -403,6 +408,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				525A82581D22456F0021E4BB /* ThridViewController.m in Sources */,
 				52C5E1241D1FDB5200B7FCB1 /* SecondViewController.m in Sources */,
 				6003F59E195388D20070C39A /* LHAppDelegate.m in Sources */,
 				52C5E11D1D1FD0B400B7FCB1 /* FirstViewController.m in Sources */,

@@ -23,7 +23,6 @@
     CGFloat duration = [self transitionDuration:transitionContext];
     
     CGFloat toTransition = CGRectGetWidth(containView.bounds);
-    CGFloat fromTranstion = toTransition * 0.3;
     //Add subview
     [containView addSubview:toView];
     UIView * overLayView = [[UIView alloc] initWithFrame:containView.bounds];

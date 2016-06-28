@@ -6,7 +6,7 @@
 //
 //
 
-#import <LHViewController.h>
+#import "LHViewController.h"
 
 @interface LHCollectionViewController : LHViewController<UICollectionViewDelegate,UICollectionViewDataSource>
 

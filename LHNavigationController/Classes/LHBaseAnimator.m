@@ -27,10 +27,10 @@
     }
 }
 - (NSTimeInterval)transitionDuration:(id<UIViewControllerContextTransitioning>)transitionContext{
-    [NSException raise:@"LHAnimatorException" format:@"Sub class must override this method at %@ %d",__FILE__,__LINE__];
+    [NSException raise:@"LHAnimatorException" format:@"Sub class must override this method at %s %d",__FILE__,__LINE__];
     return 0.0;
 }
 - (void)animateTransition:(id<UIViewControllerContextTransitioning>)transitionContext{
-    [NSException raise:@"LHAnimatorException" format:@"Sub class must override this method at %@ %d",__FILE__,__LINE__];
+    [NSException raise:@"LHAnimatorException" format:@"Sub class must override this method at %s %d",__FILE__,__LINE__];
 }
 @end
