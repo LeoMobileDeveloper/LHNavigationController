@@ -1,5 +1,5 @@
 PODS:
-  - LHNavigationController (0.1.0)
+  - LHNavigationController (0.1.1)
 
 DEPENDENCIES:
   - LHNavigationController (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  LHNavigationController: 2cd3a3878c77b3931c14c00bb82165425a1c60b3
+  LHNavigationController: e7b793171fe3fc6cfb1fa90dfbb4d3fc02ad6733
 
 PODFILE CHECKSUM: a239578255245ca301c5a0b1c7767dc47d2be9ef
 

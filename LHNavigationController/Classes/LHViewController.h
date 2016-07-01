@@ -25,10 +25,6 @@
 
 @property (strong,nonatomic,readonly)LHNavigationController * lh_navigationController;
 
-@property (strong,nonatomic)UIColor * barTintColor;
 
-@property (strong,nonatomic)UIColor * barItemsTintColor;
-
-@property (strong,nonatomic)UIColor * barTitlesTintColor;
 
 @end

@@ -8,15 +8,16 @@
 
 #import "SecondViewController.h"
 #import "ThridViewController.h"
+#import <LHNavigationController/LHNavigation.h>
 
 @implementation SecondViewController
 
 - (void)viewDidLoad{
     [super viewDidLoad];
     self.lh_navigationItem.title = @"Pan right";
-    self.barTintColor = [UIColor orangeColor];
-    self.barTitlesTintColor = [UIColor whiteColor];
-    self.barItemsTintColor = [UIColor whiteColor];
+    self.lh_barTintColor = [UIColor orangeColor];
+    self.lh_barTitlesTintColor = [UIColor whiteColor];
+    self.lh_barItemsTintColor = [UIColor whiteColor];
     UIBarButtonItem * leftItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"backIcon"]
                                                                   style:UIBarButtonItemStylePlain
                                                                  target:self

@@ -7,7 +7,7 @@
 //
 
 #import "ThridViewController.h"
-
+#import <LHNavigationController/LHNavigation.h>
 @implementation ThridViewController
 - (void)viewDidLoad{
     [super viewDidLoad];
@@ -15,9 +15,9 @@
     flowLayout.itemSize = CGSizeMake(50, 50);
     [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"cell"];
     self.collectionView.backgroundColor = [UIColor whiteColor];
-    self.barTintColor = [UIColor orangeColor];
-    self.barItemsTintColor = [UIColor whiteColor];
-    self.barTitlesTintColor = [UIColor whiteColor];
+    self.lh_barTintColor = [UIColor orangeColor];
+    self.lh_barItemsTintColor = [UIColor whiteColor];
+    self.lh_barTitlesTintColor = [UIColor whiteColor];
     self.lh_navigationItem.title = @"ColelctionView";
     UIBarButtonItem * leftItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"backIcon"]
                                                                   style:UIBarButtonItemStylePlain

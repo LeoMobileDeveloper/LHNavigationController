@@ -80,26 +80,6 @@
     self.view.backgroundColor = [UIColor whiteColor];
     self.lh_navigationBar.translucent = NO;
 }
-- (void)setBarTintColor:(UIColor *)barTintColor{
-    _barTintColor = barTintColor;
-    self.view.backgroundColor = barTintColor;
-    self.lh_navigationBar.barTintColor = barTintColor;
-}
-
-- (void)setBarItemsTintColor:(UIColor *)barItemsTintColor{
-    _barItemsTintColor = barItemsTintColor;
-    self.lh_navigationBar.tintColor = barItemsTintColor;
-}
-
-- (void)setBarTitlesTintColor:(UIColor *)barTitlesTintColor{
-    _barTitlesTintColor = barTitlesTintColor;
-    NSMutableDictionary * titleAttributs = [self.lh_navigationBar.titleTextAttributes mutableCopy];
-    if (titleAttributs == nil) {
-        titleAttributs = [NSMutableDictionary new];
-    }
-    [titleAttributs setObject:barTitlesTintColor forKey:NSForegroundColorAttributeName];
-    self.lh_navigationBar.titleTextAttributes = titleAttributs;
-}
 - (LHNavigationController *)lh_navigationController{
     UINavigationController * nav = self.navigationController;
     if ([nav isKindOfClass:[LHNavigationController class]]) {

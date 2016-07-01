@@ -7,7 +7,7 @@
 //
 
 #import "FirstViewController.h"
-#import "LHNavigationController.h"
+#import "LHNavigation.h"
 #import "SecondViewController.h"
 
 @interface FirstViewController ()<LHNavigationControllerDelegate>
@@ -19,9 +19,9 @@
 //    self.lh_navigationController.lh_transtionStyle = LHNavigationTransitionStyle3D;
     self.lh_navigationItem.title = @"Pan left";
     self.lh_navigationController.lhDelegate = self;
-    self.barTintColor = [UIColor orangeColor];
-    self.barItemsTintColor = [UIColor whiteColor];
-    self.barTitlesTintColor = [UIColor whiteColor];
+    self.lh_barTintColor = [UIColor orangeColor];
+    self.lh_barItemsTintColor = [UIColor whiteColor];
+    self.lh_barTitlesTintColor = [UIColor whiteColor];
     UIBarButtonItem * rightItem = [[UIBarButtonItem alloc] initWithTitle:@"Next" style:UIBarButtonItemStylePlain target:self action:@selector(toNext)];
     self.lh_navigationItem.rightBarButtonItem = rightItem;
 }
