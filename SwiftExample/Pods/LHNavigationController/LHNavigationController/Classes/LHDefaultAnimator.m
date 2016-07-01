@@ -10,7 +10,7 @@
 
 @implementation LHDefaultAnimator
 - (NSTimeInterval)transitionDuration:(id<UIViewControllerContextTransitioning>)transitionContext{
-    return 0.25;
+    return 0.3;
 }
 - (void)animateTransition:(id<UIViewControllerContextTransitioning>)transitionContext{
     //Get views and vcs
@@ -26,6 +26,7 @@
     //Add subview
     
     [containView addSubview:toView];
+    
     if (self.operation == LHNavAnimatorOperationPush) {
         self.nav.view.userInteractionEnabled = NO;
         toView.transform = CGAffineTransformMakeTranslation(toTransition, 0);

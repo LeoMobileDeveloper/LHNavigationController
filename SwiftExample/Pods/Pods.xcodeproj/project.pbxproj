@@ -1,0 +1,569 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0609D622BDC5D53B5057078DFA681A3B /* LHNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 352571D48C51F05BF47B2D8A101CD015 /* LHNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0B734DE52D98461C72BF89191052D773 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		130C97D62C8CD72D235DB1ED7B3A3951 /* LHCollectionViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 20A957758497000760C803BA1145905A /* LHCollectionViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1BC1738B18958D2A6F8270E3AD14E6A8 /* LHTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = D02137D0908137C8FC74DBCFE25F1BEA /* LHTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2544FA56E3F7CBAC328DDDEAC00DD12E /* Pods-SwiftExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A7D0D1BF86D2056A0BF31809631C3FB9 /* Pods-SwiftExample-dummy.m */; };
+		28B74DC66977FFE72C053FF44DDD0E55 /* LHBaseAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E9E8EDFBA5130CEDB8B8288CCEA0A36 /* LHBaseAnimator.m */; };
+		31823EC6E867922C5F911926EC32BF01 /* LHNavigationController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E7C7990186DA294946720D80570E8F5F /* LHNavigationController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		35215B50BBDA80F78E2AB181EFF4DD29 /* LHDefaultAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 609D680BCCA0231F0A63E99AC69F150B /* LHDefaultAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C50DC8C1B54D3FE8A0837BD2136E416 /* LHTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9B3CDBB25B725D0EB383BD79E62E1F /* LHTableViewController.m */; };
+		7D311292E46495C4BAE690F1F5B8CB00 /* LH3DAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = C7D2A075DFF4FCEB1C953ECD5032337B /* LH3DAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		85B3FB52BBDEDAC50DCB1D39A90C253F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		8EA064DC8F378A81A85ADFD85746B4A9 /* Pods-SwiftExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6706DECFADA5957AEC757B22A818EFF1 /* Pods-SwiftExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9651C2AA93F2699A600996ECC794C302 /* LHNavigationController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B365ED3748515854BAC098503E6CAA90 /* LHNavigationController-dummy.m */; };
+		A4505AAC8256251366E0FA7476094145 /* LH3DAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E406162652BE5E51A99EEA2B4E8A35A /* LH3DAnimator.m */; };
+		B3257FA94584B63642D8D5834D02EBE5 /* LHCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F0078750F85E110D854753A39DFCEE /* LHCollectionViewController.m */; };
+		DA232577D952D84D1755F8BE50DB1536 /* LHNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93AB3AE0CB55D649B9B8ECC0EF307662 /* LHNavigationController.m */; };
+		E04CA7E6AC668D358F5CFDD62E76D6AC /* LHBaseAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = DEE94FAAAF632D250BB5672FB770C296 /* LHBaseAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EA667ED8E1FFE94017548A6BC335920A /* LHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C4C81EE7E87697DD307019F6A80F556 /* LHViewController.m */; };
+		F26B1E5E306EC0C56097F0357265801A /* LHDefaultAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8721DD9D0F39B2BC3246BA59A59C4A61 /* LHDefaultAnimator.m */; };
+		FA177173FC7F948E01CABFC113CDB4BE /* LHViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 34717EA6196D495C5A0BEBD3BB28B8FA /* LHViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E4FBF304C0FA65FA3ED7075D344F3914 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B385075CBE27AF4EAFFCD27BA9CD30B;
+			remoteInfo = LHNavigationController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		20A957758497000760C803BA1145905A /* LHCollectionViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LHCollectionViewController.h; path = LHNavigationController/Classes/LHCollectionViewController.h; sourceTree = "<group>"; };
+		28CF2502FD70FCF187ADFA00F32B338F /* LHNavigationController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = LHNavigationController.modulemap; sourceTree = "<group>"; };
+		34717EA6196D495C5A0BEBD3BB28B8FA /* LHViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LHViewController.h; path = LHNavigationController/Classes/LHViewController.h; sourceTree = "<group>"; };
+		34F0078750F85E110D854753A39DFCEE /* LHCollectionViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LHCollectionViewController.m; path = LHNavigationController/Classes/LHCollectionViewController.m; sourceTree = "<group>"; };
+		352571D48C51F05BF47B2D8A101CD015 /* LHNavigationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LHNavigationController.h; path = LHNavigationController/Classes/LHNavigationController.h; sourceTree = "<group>"; };
+		447E6049924EBC460F38103186745AC7 /* Pods-SwiftExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwiftExample-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4E406162652BE5E51A99EEA2B4E8A35A /* LH3DAnimator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LH3DAnimator.m; path = LHNavigationController/Classes/LH3DAnimator.m; sourceTree = "<group>"; };
+		609D680BCCA0231F0A63E99AC69F150B /* LHDefaultAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LHDefaultAnimator.h; path = LHNavigationController/Classes/LHDefaultAnimator.h; sourceTree = "<group>"; };
+		6706DECFADA5957AEC757B22A818EFF1 /* Pods-SwiftExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftExample-umbrella.h"; sourceTree = "<group>"; };
+		762AE5014913DE0B88835178863A58C6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7AFF4EA1D32B6C8476831DE86B029C32 /* Pods-SwiftExample-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftExample-resources.sh"; sourceTree = "<group>"; };
+		7E9E8EDFBA5130CEDB8B8288CCEA0A36 /* LHBaseAnimator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LHBaseAnimator.m; path = LHNavigationController/Classes/LHBaseAnimator.m; sourceTree = "<group>"; };
+		8721DD9D0F39B2BC3246BA59A59C4A61 /* LHDefaultAnimator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LHDefaultAnimator.m; path = LHNavigationController/Classes/LHDefaultAnimator.m; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93AB3AE0CB55D649B9B8ECC0EF307662 /* LHNavigationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LHNavigationController.m; path = LHNavigationController/Classes/LHNavigationController.m; sourceTree = "<group>"; };
+		9C4C81EE7E87697DD307019F6A80F556 /* LHViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LHViewController.m; path = LHNavigationController/Classes/LHViewController.m; sourceTree = "<group>"; };
+		A7D0D1BF86D2056A0BF31809631C3FB9 /* Pods-SwiftExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwiftExample-dummy.m"; sourceTree = "<group>"; };
+		B365ED3748515854BAC098503E6CAA90 /* LHNavigationController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LHNavigationController-dummy.m"; sourceTree = "<group>"; };
+		B797C5B1D557EA19901094C73D83CF28 /* Pods-SwiftExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftExample.debug.xcconfig"; sourceTree = "<group>"; };
+		BB49CAD32427379AAC14ED99458B6EDF /* LHNavigationController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LHNavigationController-prefix.pch"; sourceTree = "<group>"; };
+		C475DF4B4F5CB6DB448EB610DC8CF36F /* Pods-SwiftExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftExample.release.xcconfig"; sourceTree = "<group>"; };
+		C7D2A075DFF4FCEB1C953ECD5032337B /* LH3DAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LH3DAnimator.h; path = LHNavigationController/Classes/LH3DAnimator.h; sourceTree = "<group>"; };
+		CA1A87D357A54D74E042FCA6E6A40F36 /* Pods-SwiftExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftExample-acknowledgements.plist"; sourceTree = "<group>"; };
+		CA9B3CDBB25B725D0EB383BD79E62E1F /* LHTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LHTableViewController.m; path = LHNavigationController/Classes/LHTableViewController.m; sourceTree = "<group>"; };
+		CAA6F5BBC8338CF8BD803E5C1E344608 /* Pods-SwiftExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftExample-frameworks.sh"; sourceTree = "<group>"; };
+		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CEE5DBCF9D3AABE68142E1F6B64D0116 /* Pods_SwiftExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D02137D0908137C8FC74DBCFE25F1BEA /* LHTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LHTableViewController.h; path = LHNavigationController/Classes/LHTableViewController.h; sourceTree = "<group>"; };
+		DEE94FAAAF632D250BB5672FB770C296 /* LHBaseAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LHBaseAnimator.h; path = LHNavigationController/Classes/LHBaseAnimator.h; sourceTree = "<group>"; };
+		E306A7CD57A4E39CD9CFF07EFC9CE49F /* LHNavigationController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LHNavigationController.xcconfig; sourceTree = "<group>"; };
+		E7C7990186DA294946720D80570E8F5F /* LHNavigationController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LHNavigationController-umbrella.h"; sourceTree = "<group>"; };
+		F2163884019CBFF927E113D15336AC14 /* Pods-SwiftExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SwiftExample.modulemap"; sourceTree = "<group>"; };
+		F8D4B8032B804828A4F6DDF2AD9EC2E0 /* LHNavigationController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LHNavigationController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F93B070DA55FA1EA2A3C65500604AD0E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		70A347A68F57D1582CB3E52FF99210E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85B3FB52BBDEDAC50DCB1D39A90C253F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8069B5B1A096F7B9DE47E6E25153CF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B734DE52D98461C72BF89191052D773 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		6ECD290A9E7AE394C15745DBF92AF9FC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FAFD26C462F9C4A35426EEF8E49E88C8 /* LHNavigationController */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				6ECD290A9E7AE394C15745DBF92AF9FC /* Pods */,
+				85863F8AF3DAFCC84B267E0843B7C37D /* Products */,
+				A4026E2CF2FE6A0DA74ED3072FA60A16 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		85863F8AF3DAFCC84B267E0843B7C37D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F8D4B8032B804828A4F6DDF2AD9EC2E0 /* LHNavigationController.framework */,
+				CEE5DBCF9D3AABE68142E1F6B64D0116 /* Pods_SwiftExample.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		90C8C1AE199FBAD76DF28878C9081609 /* Pods-SwiftExample */ = {
+			isa = PBXGroup;
+			children = (
+				762AE5014913DE0B88835178863A58C6 /* Info.plist */,
+				F2163884019CBFF927E113D15336AC14 /* Pods-SwiftExample.modulemap */,
+				447E6049924EBC460F38103186745AC7 /* Pods-SwiftExample-acknowledgements.markdown */,
+				CA1A87D357A54D74E042FCA6E6A40F36 /* Pods-SwiftExample-acknowledgements.plist */,
+				A7D0D1BF86D2056A0BF31809631C3FB9 /* Pods-SwiftExample-dummy.m */,
+				CAA6F5BBC8338CF8BD803E5C1E344608 /* Pods-SwiftExample-frameworks.sh */,
+				7AFF4EA1D32B6C8476831DE86B029C32 /* Pods-SwiftExample-resources.sh */,
+				6706DECFADA5957AEC757B22A818EFF1 /* Pods-SwiftExample-umbrella.h */,
+				B797C5B1D557EA19901094C73D83CF28 /* Pods-SwiftExample.debug.xcconfig */,
+				C475DF4B4F5CB6DB448EB610DC8CF36F /* Pods-SwiftExample.release.xcconfig */,
+			);
+			name = "Pods-SwiftExample";
+			path = "Target Support Files/Pods-SwiftExample";
+			sourceTree = "<group>";
+		};
+		A26FCAEE4595FDB31962E5CAD295ACA8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F93B070DA55FA1EA2A3C65500604AD0E /* Info.plist */,
+				28CF2502FD70FCF187ADFA00F32B338F /* LHNavigationController.modulemap */,
+				E306A7CD57A4E39CD9CFF07EFC9CE49F /* LHNavigationController.xcconfig */,
+				B365ED3748515854BAC098503E6CAA90 /* LHNavigationController-dummy.m */,
+				BB49CAD32427379AAC14ED99458B6EDF /* LHNavigationController-prefix.pch */,
+				E7C7990186DA294946720D80570E8F5F /* LHNavigationController-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/LHNavigationController";
+			sourceTree = "<group>";
+		};
+		A4026E2CF2FE6A0DA74ED3072FA60A16 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				90C8C1AE199FBAD76DF28878C9081609 /* Pods-SwiftExample */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FAFD26C462F9C4A35426EEF8E49E88C8 /* LHNavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				C7D2A075DFF4FCEB1C953ECD5032337B /* LH3DAnimator.h */,
+				4E406162652BE5E51A99EEA2B4E8A35A /* LH3DAnimator.m */,
+				DEE94FAAAF632D250BB5672FB770C296 /* LHBaseAnimator.h */,
+				7E9E8EDFBA5130CEDB8B8288CCEA0A36 /* LHBaseAnimator.m */,
+				20A957758497000760C803BA1145905A /* LHCollectionViewController.h */,
+				34F0078750F85E110D854753A39DFCEE /* LHCollectionViewController.m */,
+				609D680BCCA0231F0A63E99AC69F150B /* LHDefaultAnimator.h */,
+				8721DD9D0F39B2BC3246BA59A59C4A61 /* LHDefaultAnimator.m */,
+				352571D48C51F05BF47B2D8A101CD015 /* LHNavigationController.h */,
+				93AB3AE0CB55D649B9B8ECC0EF307662 /* LHNavigationController.m */,
+				D02137D0908137C8FC74DBCFE25F1BEA /* LHTableViewController.h */,
+				CA9B3CDBB25B725D0EB383BD79E62E1F /* LHTableViewController.m */,
+				34717EA6196D495C5A0BEBD3BB28B8FA /* LHViewController.h */,
+				9C4C81EE7E87697DD307019F6A80F556 /* LHViewController.m */,
+				A26FCAEE4595FDB31962E5CAD295ACA8 /* Support Files */,
+			);
+			path = LHNavigationController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1023468420F59BEE03E8B5A22A1CD8E1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D311292E46495C4BAE690F1F5B8CB00 /* LH3DAnimator.h in Headers */,
+				E04CA7E6AC668D358F5CFDD62E76D6AC /* LHBaseAnimator.h in Headers */,
+				130C97D62C8CD72D235DB1ED7B3A3951 /* LHCollectionViewController.h in Headers */,
+				35215B50BBDA80F78E2AB181EFF4DD29 /* LHDefaultAnimator.h in Headers */,
+				31823EC6E867922C5F911926EC32BF01 /* LHNavigationController-umbrella.h in Headers */,
+				0609D622BDC5D53B5057078DFA681A3B /* LHNavigationController.h in Headers */,
+				1BC1738B18958D2A6F8270E3AD14E6A8 /* LHTableViewController.h in Headers */,
+				FA177173FC7F948E01CABFC113CDB4BE /* LHViewController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAD160B5E6F7A7D51DC64ED088174DC1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EA064DC8F378A81A85ADFD85746B4A9 /* Pods-SwiftExample-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6592F40C52AA1A269A1D1B3BCA2998C8 /* Pods-SwiftExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E719872956B38FA43D2D30AC8B1E0F04 /* Build configuration list for PBXNativeTarget "Pods-SwiftExample" */;
+			buildPhases = (
+				03957240B329CEBF6D3EAA9895CFF813 /* Sources */,
+				B8069B5B1A096F7B9DE47E6E25153CF5 /* Frameworks */,
+				FAD160B5E6F7A7D51DC64ED088174DC1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3BFC528908A13191C7BB754CE606D0F7 /* PBXTargetDependency */,
+			);
+			name = "Pods-SwiftExample";
+			productName = "Pods-SwiftExample";
+			productReference = CEE5DBCF9D3AABE68142E1F6B64D0116 /* Pods_SwiftExample.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9B385075CBE27AF4EAFFCD27BA9CD30B /* LHNavigationController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B653E5C3A33053181241CD2705B40FA6 /* Build configuration list for PBXNativeTarget "LHNavigationController" */;
+			buildPhases = (
+				CBF898F4F5D9F0873679A915C4D7FF7D /* Sources */,
+				70A347A68F57D1582CB3E52FF99210E8 /* Frameworks */,
+				1023468420F59BEE03E8B5A22A1CD8E1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LHNavigationController;
+			productName = LHNavigationController;
+			productReference = F8D4B8032B804828A4F6DDF2AD9EC2E0 /* LHNavigationController.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 85863F8AF3DAFCC84B267E0843B7C37D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9B385075CBE27AF4EAFFCD27BA9CD30B /* LHNavigationController */,
+				6592F40C52AA1A269A1D1B3BCA2998C8 /* Pods-SwiftExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		03957240B329CEBF6D3EAA9895CFF813 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2544FA56E3F7CBAC328DDDEAC00DD12E /* Pods-SwiftExample-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBF898F4F5D9F0873679A915C4D7FF7D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4505AAC8256251366E0FA7476094145 /* LH3DAnimator.m in Sources */,
+				28B74DC66977FFE72C053FF44DDD0E55 /* LHBaseAnimator.m in Sources */,
+				B3257FA94584B63642D8D5834D02EBE5 /* LHCollectionViewController.m in Sources */,
+				F26B1E5E306EC0C56097F0357265801A /* LHDefaultAnimator.m in Sources */,
+				9651C2AA93F2699A600996ECC794C302 /* LHNavigationController-dummy.m in Sources */,
+				DA232577D952D84D1755F8BE50DB1536 /* LHNavigationController.m in Sources */,
+				7C50DC8C1B54D3FE8A0837BD2136E416 /* LHTableViewController.m in Sources */,
+				EA667ED8E1FFE94017548A6BC335920A /* LHViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3BFC528908A13191C7BB754CE606D0F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LHNavigationController;
+			target = 9B385075CBE27AF4EAFFCD27BA9CD30B /* LHNavigationController */;
+			targetProxy = E4FBF304C0FA65FA3ED7075D344F3914 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		42B24C15E2749B6322B918CA4ECB8CE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B797C5B1D557EA19901094C73D83CF28 /* Pods-SwiftExample.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftExample/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftExample/Pods-SwiftExample.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SwiftExample;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		47BEF9D903506B003EA5C2B249729489 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		8CCA98AB770C0D316B0A44AD9446286C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C475DF4B4F5CB6DB448EB610DC8CF36F /* Pods-SwiftExample.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftExample/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftExample/Pods-SwiftExample.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SwiftExample;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AAF678CED40D3499169D10F63CA0719E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C265787BB3E6B66EB0CA5E3D365FACC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E306A7CD57A4E39CD9CFF07EFC9CE49F /* LHNavigationController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/LHNavigationController/LHNavigationController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LHNavigationController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LHNavigationController/LHNavigationController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = LHNavigationController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EEB7525CA2F54BFF07ADDDD0B31EF363 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E306A7CD57A4E39CD9CFF07EFC9CE49F /* LHNavigationController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/LHNavigationController/LHNavigationController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LHNavigationController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LHNavigationController/LHNavigationController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = LHNavigationController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47BEF9D903506B003EA5C2B249729489 /* Debug */,
+				AAF678CED40D3499169D10F63CA0719E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B653E5C3A33053181241CD2705B40FA6 /* Build configuration list for PBXNativeTarget "LHNavigationController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEB7525CA2F54BFF07ADDDD0B31EF363 /* Debug */,
+				C265787BB3E6B66EB0CA5E3D365FACC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E719872956B38FA43D2D30AC8B1E0F04 /* Build configuration list for PBXNativeTarget "Pods-SwiftExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42B24C15E2749B6322B918CA4ECB8CE3 /* Debug */,
+				8CCA98AB770C0D316B0A44AD9446286C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

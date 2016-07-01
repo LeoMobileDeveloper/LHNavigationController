@@ -22,6 +22,12 @@
     self.barTintColor = [UIColor orangeColor];
     self.barItemsTintColor = [UIColor whiteColor];
     self.barTitlesTintColor = [UIColor whiteColor];
+    UIBarButtonItem * rightItem = [[UIBarButtonItem alloc] initWithTitle:@"Next" style:UIBarButtonItemStylePlain target:self action:@selector(toNext)];
+    self.lh_navigationItem.rightBarButtonItem = rightItem;
+}
+- (void)toNext{
+    SecondViewController * dvc = [[SecondViewController alloc] init];
+    [self.navigationController pushViewController:dvc animated:YES];
 }
 -(UIViewController *)viewControllerAfterController:(UIViewController *)controller{
     if (controller == self) {

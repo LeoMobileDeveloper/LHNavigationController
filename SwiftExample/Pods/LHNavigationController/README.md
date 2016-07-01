@@ -1,5 +1,5 @@
 
-[![Build Status](https://travis-ci.org/LeoMobileDeveloper/LHNavigationController.svg?branch=master)](https://travis-ci.org/LeoMobileDeveloper/LHProgressHUD)  [![License: MIT](https://img.shields.io/cocoapods/l/LHNavigationController.svg?style=flat)](http://opensource.org/licenses/MIT)  [![Version](https://img.shields.io/cocoapods/v/LHNavigationController.svg?style=flat)](http://cocoapods.org/pods/LHNavigationController)
+[![Version](https://img.shields.io/cocoapods/v/LHNavigationController.svg?style=flat)](http://cocoapods.org/pods/LHNavigationController)
 
 
 # LHNavigationController
@@ -25,13 +25,12 @@ pod LHNavigationController
 ## 类
 主要有四个类
 
-* LHNavigationController(如果你只需要全屏push/pop只需要这个一类即可)
-
-如果你想要实现网易那样的NavigationBar切换效果，你需要让某些类继承以下
-
-* LHViewController 
+* LHNavigationController
+* LHViewController
 * LHTableViewController
 * LHCollectionViewController
+
+通常，你应该以这三个类为基类来建立你的App
 
 
 ## Pop

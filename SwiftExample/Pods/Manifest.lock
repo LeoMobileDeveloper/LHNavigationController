@@ -1,0 +1,12 @@
+PODS:
+  - LHNavigationController (0.1.1)
+
+DEPENDENCIES:
+  - LHNavigationController
+
+SPEC CHECKSUMS:
+  LHNavigationController: e7b793171fe3fc6cfb1fa90dfbb4d3fc02ad6733
+
+PODFILE CHECKSUM: 7f955d26ef9fa743e1f877e7c7d7736577d61568
+
+COCOAPODS: 1.0.0
