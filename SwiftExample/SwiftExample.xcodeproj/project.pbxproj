@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2A5794813B80AB7E04024258 /* Pods_SwiftExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DDEAC82BCC2AF06D784BBEF /* Pods_SwiftExample.framework */; };
+		520C6C9B1D26AAAC00F9948B /* SecondController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520C6C9A1D26AAAC00F9948B /* SecondController.swift */; };
 		528123801D23DCEE00FD9FE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5281237F1D23DCEE00FD9FE7 /* AppDelegate.swift */; };
 		528123821D23DCEE00FD9FE7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528123811D23DCEE00FD9FE7 /* ViewController.swift */; };
 		528123851D23DCEE00FD9FE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 528123831D23DCEE00FD9FE7 /* Main.storyboard */; };
@@ -17,6 +18,8 @@
 
 /* Begin PBXFileReference section */
 		1DDEAC82BCC2AF06D784BBEF /* Pods_SwiftExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		520C6C961D26A92100F9948B /* SwiftExample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftExample-Bridging-Header.h"; sourceTree = "<group>"; };
+		520C6C9A1D26AAAC00F9948B /* SecondController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondController.swift; sourceTree = "<group>"; };
 		5281237C1D23DCEE00FD9FE7 /* SwiftExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5281237F1D23DCEE00FD9FE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		528123811D23DCEE00FD9FE7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -61,12 +64,14 @@
 		5281237E1D23DCEE00FD9FE7 /* SwiftExample */ = {
 			isa = PBXGroup;
 			children = (
+				520C6C961D26A92100F9948B /* SwiftExample-Bridging-Header.h */,
 				5281237F1D23DCEE00FD9FE7 /* AppDelegate.swift */,
 				528123811D23DCEE00FD9FE7 /* ViewController.swift */,
+				520C6C9A1D26AAAC00F9948B /* SecondController.swift */,
 				528123831D23DCEE00FD9FE7 /* Main.storyboard */,
 				528123861D23DCEE00FD9FE7 /* Assets.xcassets */,
-				528123881D23DCEE00FD9FE7 /* LaunchScreen.storyboard */,
 				5281238B1D23DCEE00FD9FE7 /* Info.plist */,
+				528123881D23DCEE00FD9FE7 /* LaunchScreen.storyboard */,
 			);
 			path = SwiftExample;
 			sourceTree = "<group>";
@@ -210,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				520C6C9B1D26AAAC00F9948B /* SecondController.swift in Sources */,
 				528123821D23DCEE00FD9FE7 /* ViewController.swift in Sources */,
 				528123801D23DCEE00FD9FE7 /* AppDelegate.swift in Sources */,
 			);
@@ -327,10 +333,13 @@
 			baseConfigurationReference = 9F8DC01865CA4EF6CF999C14 /* Pods-SwiftExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SwiftExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Leo.SwiftExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftExample/SwiftExample-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -339,10 +348,12 @@
 			baseConfigurationReference = BD8F1DD2EB3C9364D01934E0 /* Pods-SwiftExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SwiftExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Leo.SwiftExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftExample/SwiftExample-Bridging-Header.h";
 			};
 			name = Release;
 		};

@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "LHBaseAnimator.h"
 
-@protocol LHNavigationControllerDelegate<NSObject>
+@protocol LHNavigationControllerDelegate <NSObject>
 /**
  *  The view controller that after top most controller
  *

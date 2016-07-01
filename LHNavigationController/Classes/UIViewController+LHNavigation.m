@@ -13,7 +13,7 @@
 @implementation UIViewController (LHNavigation)
 
 - (void)setLh_barTintColor:(UIColor *)lh_barTintColor{
-    objc_setAssociatedObject(self, @selector(lh_barTintColor),lh_barTintColor, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    objc_setAssociatedObject(self, @selector(lh_barTintColor),lh_barTintColor, OBJC_ASSOCIATION_RETAIN);
     if ([self isKindOfClass:[LHViewController class]]) {
         LHViewController * vc = (LHViewController *)self;
         vc.view.backgroundColor = lh_barTintColor;
@@ -23,10 +23,11 @@
     }
 }
 - (UIColor *)lh_barTintColor{
-    objc_getAssociatedObject(self, _cmd);
+    UIColor * color = objc_getAssociatedObject(self, _cmd);
+    return color;
 }
 - (void)setLh_barItemsTintColor:(UIColor *)lh_barItemsTintColor{
-    objc_setAssociatedObject(self, @selector(lh_barItemsTintColor),lh_barItemsTintColor, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    objc_setAssociatedObject(self, @selector(lh_barItemsTintColor),lh_barItemsTintColor, OBJC_ASSOCIATION_RETAIN);
     if ([self isKindOfClass:[LHViewController class]]) {
         LHViewController * vc = (LHViewController *)self;
         vc.lh_navigationBar.tintColor = lh_barItemsTintColor;
@@ -35,10 +36,11 @@
     }
 }
 - (UIColor *)lh_barItemsTintColor{
-    objc_getAssociatedObject(self, _cmd);
+    UIColor * color = objc_getAssociatedObject(self, _cmd);
+    return color;
 }
 - (void)setLh_barTitlesTintColor:(UIColor *)lh_barTitlesTintColor{
-    objc_setAssociatedObject(self, @selector(lh_barTitlesTintColor),lh_barTitlesTintColor, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    objc_setAssociatedObject(self, @selector(lh_barTitlesTintColor),lh_barTitlesTintColor, OBJC_ASSOCIATION_RETAIN);
     if ([self isKindOfClass:[LHViewController class]]) {
         LHViewController * vc = (LHViewController *)self;
         NSMutableDictionary * titleAttributs = [vc.lh_navigationBar.titleTextAttributes mutableCopy];
@@ -57,6 +59,14 @@
     }
 }
 - (UIColor *)lh_barTitlesTintColor{
-    objc_getAssociatedObject(self, _cmd);
+    UIColor * color = objc_getAssociatedObject(self, _cmd);
+    return color;
+}
+- (LHNavigationController *)lh_navigationController{
+    UINavigationController * nav = self.navigationController;
+    if ([nav isKindOfClass:[LHNavigationController class]]) {
+        return (LHNavigationController *)nav;
+    }
+    return nil;
 }
 @end

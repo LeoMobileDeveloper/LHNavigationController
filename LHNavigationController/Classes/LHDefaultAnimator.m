@@ -7,6 +7,7 @@
 //
 
 #import "LHDefaultAnimator.h"
+#import "UIViewController+LHNavigation.h"
 
 @implementation LHDefaultAnimator
 - (NSTimeInterval)transitionDuration:(id<UIViewControllerContextTransitioning>)transitionContext{
@@ -24,19 +25,25 @@
     CGFloat toTransition = CGRectGetWidth(containView.bounds);
     CGFloat fromTranstion = toTransition * 0.3;
     //Add subview
-    
     [containView addSubview:toView];
+    BOOL navHidden = self.nav.navigationBar.isHidden;
+    UIColor * fromColor = fromvc.lh_barTintColor;
+    UIColor * toColor = tovc.lh_barTintColor;
     if (self.operation == LHNavAnimatorOperationPush) {
         self.nav.view.userInteractionEnabled = NO;
         toView.transform = CGAffineTransformMakeTranslation(toTransition, 0);
         fromView.transform = CGAffineTransformIdentity;
         [containView bringSubviewToFront:toView];
+        self.nav.navigationBar.barTintColor = fromColor;
         [UIView animateWithDuration:duration
                               delay:0.0
                             options:UIViewAnimationOptionCurveLinear
                          animations:^{
                              toView.transform = CGAffineTransformIdentity;
                              fromView.transform = CGAffineTransformMakeTranslation(-1 * fromTranstion, 0);
+                             if (!navHidden && toColor != nil) {
+                                 self.nav.navigationBar.barTintColor = toColor;
+                             }
                          } completion:^(BOOL finished) {
                              self.nav.view.userInteractionEnabled = YES;
                              fromView.transform = CGAffineTransformIdentity;
@@ -49,10 +56,14 @@
         toView.transform = CGAffineTransformMakeTranslation(-1 * fromTranstion, 0);
         fromView.transform = CGAffineTransformIdentity;
         self.nav.view.userInteractionEnabled = NO;
+        self.nav.navigationBar.barTintColor = fromColor;
         [UIView animateWithDuration:duration
                               delay:0.0
                             options:UIViewAnimationOptionCurveLinear
                          animations:^{
+                             if (!navHidden && toColor != nil) {
+                                 self.nav.navigationBar.barTintColor = toColor;
+                             }
                              toView.transform = CGAffineTransformIdentity;
                              fromView.transform = CGAffineTransformMakeTranslation(toTransition, 0);
                          } completion:^(BOOL finished) {

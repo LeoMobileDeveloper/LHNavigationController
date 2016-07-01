@@ -23,8 +23,4 @@
 
 @property (strong,nonatomic,readonly)UIView * lh_view;
 
-@property (strong,nonatomic,readonly)LHNavigationController * lh_navigationController;
-
-
-
 @end

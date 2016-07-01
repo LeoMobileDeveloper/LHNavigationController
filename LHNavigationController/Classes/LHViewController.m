@@ -80,11 +80,5 @@
     self.view.backgroundColor = [UIColor whiteColor];
     self.lh_navigationBar.translucent = NO;
 }
-- (LHNavigationController *)lh_navigationController{
-    UINavigationController * nav = self.navigationController;
-    if ([nav isKindOfClass:[LHNavigationController class]]) {
-        return (LHNavigationController *)nav;
-    }
-    return nil;
-}
+
 @end

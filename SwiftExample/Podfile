@@ -3,5 +3,5 @@
 
 target 'SwiftExample' do
   use_frameworks!
-  pod 'LHNavigationController'
+  pod 'LHNavigationController', :path => '../'
 end
