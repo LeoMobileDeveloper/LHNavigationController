@@ -6,12 +6,30 @@
 
 LHNavigationController能够让你的App像网易新闻那样支持全屏的push/pop.
 
+0.1.2版本支持
+
+- 全屏push手势
+- 全屏pop手势
+- 切换的时候导航栏背景色平滑切换
+- 类似网易或者斗鱼的导航栏切换效果
+
+
 ## 安装
 
 ```
 pod LHNavigationController
 ```
+如果在Swift项目中应用（参见SwiftDemo工程）
 
+```
+use_frameworks!
+pod LHNavigationController
+```
+然后，在使用的swift文件中
+
+```
+import LHNavigationController
+```
 ## 效果
 
 默认效果
@@ -25,7 +43,7 @@ pod LHNavigationController
 ## 类
 主要有四个类
 
-* LHNavigationController(如果你只需要全屏push/pop只需要这个一类即可)
+* LHNavigationController(如果你只需要全屏push/pop，导航栏背景色平滑切换，只需要这个一类即可，默认导航栏Hidden)
 
 如果你想要实现网易那样的NavigationBar切换效果，你需要让某些类继承以下
 
@@ -53,8 +71,12 @@ pod LHNavigationController
 - (UIViewController *)viewControllerAfterController:(UIViewController *)controller{
    //这里的controller是导航堆栈最上面的那个
 }
+```
 
-``` 
+
+## 获得网易or斗鱼类似的导航栏切换效果
+
+需要继承LHViewController来让ViewControlelr自带导航栏
 
 ## 属性
 
