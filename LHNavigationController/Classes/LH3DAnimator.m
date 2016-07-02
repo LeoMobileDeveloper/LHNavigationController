@@ -39,7 +39,8 @@
         [fromView addSubview:overLayView];
         overLayView.alpha = 0.0;
         [containView bringSubviewToFront:toView];
-        
+        self.nav.navigationBar.barTintColor = fromColor;
+
         [UIView animateWithDuration:duration
                               delay:0.0
                             options:UIViewAnimationOptionCurveLinear
@@ -65,6 +66,7 @@
         self.nav.view.userInteractionEnabled = NO;
         [toView addSubview:overLayView];
         overLayView.alpha = 0.5;
+        self.nav.navigationBar.barTintColor = fromColor;
         [UIView animateWithDuration:duration
                               delay:0.0
                             options:UIViewAnimationOptionCurveLinear
