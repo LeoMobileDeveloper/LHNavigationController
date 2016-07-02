@@ -74,6 +74,5 @@
                              [transitionContext completeTransition:!canceled];
                          }];
     }
-    
 }
 @end

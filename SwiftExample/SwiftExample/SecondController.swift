@@ -16,9 +16,6 @@ class SecondController: UIViewController {
         self.lh_barTintColor = UIColor.blueColor()
         self.navigationItem.title = "Second";
         self.view.backgroundColor = UIColor.whiteColor()
-        
-        let leftItem = UIBarButtonItem(title: "Back", style: .Plain, target: self, action: #selector(SecondController.back))
-        self.navigationItem.leftBarButtonItem = leftItem
         // Do any additional setup after loading the view, typically from a nib.
     }
     

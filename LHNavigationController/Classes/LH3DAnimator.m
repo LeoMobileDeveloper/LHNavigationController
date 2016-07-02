@@ -7,6 +7,7 @@
 //
 
 #import "LH3DAnimator.h"
+#import "UIViewController+LHNavigation.h"
 
 @implementation LH3DAnimator
 
@@ -27,6 +28,9 @@
     [containView addSubview:toView];
     UIView * overLayView = [[UIView alloc] initWithFrame:containView.bounds];
     overLayView.backgroundColor = [UIColor blackColor];
+    BOOL navHidden = self.nav.navigationBar.isHidden;
+    UIColor * fromColor = fromvc.lh_barTintColor;
+    UIColor * toColor = tovc.lh_barTintColor;
     
     if (self.operation == LHNavAnimatorOperationPush) {
         self.nav.view.userInteractionEnabled = NO;
@@ -43,6 +47,9 @@
                              toView.transform = CGAffineTransformIdentity;
                              fromView.transform = CGAffineTransformMakeScale(0.95, 0.95);
                              overLayView.alpha = 0.5;
+                             if (!navHidden && toColor != nil) {
+                                 self.nav.navigationBar.barTintColor = toColor;
+                             }
                          } completion:^(BOOL finished) {
                              self.nav.view.userInteractionEnabled = YES;
                              fromView.transform = CGAffineTransformIdentity;
@@ -62,6 +69,9 @@
                               delay:0.0
                             options:UIViewAnimationOptionCurveLinear
                          animations:^{
+                             if (!navHidden && toColor != nil) {
+                                 self.nav.navigationBar.barTintColor = toColor;
+                             }
                              toView.transform = CGAffineTransformIdentity;
                              fromView.transform = CGAffineTransformMakeTranslation(toTransition, 0);
                              overLayView.alpha = 0.0;
