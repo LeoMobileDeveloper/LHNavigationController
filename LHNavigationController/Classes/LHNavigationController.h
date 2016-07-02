@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "LHBaseAnimator.h"
-
+@import UIKit;
 @protocol LHNavigationControllerDelegate <NSObject>
 /**
  *  The view controller that after top most controller
@@ -17,7 +17,7 @@
  *
  *  @return The viewController that use pop gesture to push
  */
-- (UIViewController *)viewControllerAfterController:(UIViewController *)controller;
+- (UIViewController * _Nullable)viewControllerAfterController:(UIViewController * _Nullable)controller;
 @end
 
 @interface LHNavigationController : UINavigationController
@@ -25,7 +25,7 @@
 /**
  *  Use this delegate to "pan left to push"
  */
-@property (weak,nonatomic) id<LHNavigationControllerDelegate> lhDelegate;
+@property (weak,nonatomic,nullable) id<LHNavigationControllerDelegate> lhDelegate;
 
 @property (assign,nonatomic) LHNavigationTransitionStyle lh_transtionStyle;
 

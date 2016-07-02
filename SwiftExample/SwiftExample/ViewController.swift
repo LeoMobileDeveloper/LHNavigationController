@@ -7,17 +7,26 @@
 //
 
 import UIKit
+import LHNavigationController
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,LHNavigationControllerDelegate{
     
     @IBAction func toSecond(sender: AnyObject) {
         let svc = SecondController()
         self.navigationController?.pushViewController(svc, animated: true)
     }
+    func viewControllerAfterController(controller: UIViewController?) -> UIViewController? {
+        if controller == self {
+            let svc = SecondController()
+            return svc
+        }
+        return nil
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         self.lh_barTintColor = UIColor.orangeColor()
-        self.navigationController?.setNavigationBarHidden(false, animated: false)
+        self.lh_navigationController.lhDelegate = self;
+        self.lh_navigationController.setNavigationBarHidden(false, animated: false)
         // Do any additional setup after loading the view, typically from a nib.
     }
     
